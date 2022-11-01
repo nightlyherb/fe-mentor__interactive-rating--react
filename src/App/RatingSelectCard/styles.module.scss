@@ -1,0 +1,34 @@
+@use "/src/@common/styles/colors.module.scss" as colors;
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: colors.$dark-blue;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  $size: 32px;
+  width: $size;
+  height: $size;
+
+  border-radius: 100vmax;
+
+  background-color: inherit;
+  color: colors.$light-gray;
+  & {
+    filter: brightness(150%);
+  }
+  &:hover, &:active {
+    filter: brightness(200%);
+  }
+}
