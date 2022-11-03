@@ -22,22 +22,15 @@
   height: $size;
 
   border-radius: 100vmax;
-<<<<<<< HEAD
-
-=======
 }
 
 .radioLabel {
->>>>>>> 717a7d7 (feat: add rating radio button)
   background-color: inherit;
   color: colors.$light-gray;
   & {
     filter: brightness(150%);
   }
   &:hover, &:active {
-<<<<<<< HEAD
-    filter: brightness(200%);
-=======
     filter: brightness(180%);
   }
 
@@ -49,6 +42,5 @@
     &:hover, &:active {
       filter: brightness(120%);
     }
->>>>>>> 717a7d7 (feat: add rating radio button)
   }
 }
