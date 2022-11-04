@@ -1,0 +1,49 @@
+@use "/src/@common/styles/colors.module.scss" as colors;
+@use "/src/@common/styles/typography.module.scss" as typography;
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: colors.$dark-blue;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  $size: 32px;
+  width: $size;
+  height: $size;
+
+  border-radius: 100vmax;
+}
+
+.radioLabel {
+  font-family: "Overpass" 16px;
+
+  background-color: inherit;
+  color: colors.$medium-gray;
+  & {
+    filter: brightness(150%);
+  }
+  &:hover, &:active {
+    filter: brightness(180%);
+  }
+
+  &.selectedRadioLabel {
+    background-color: colors.$orange;
+    color: colors.$white;
+    filter: brightness(100%);
+
+    &:hover, &:active {
+      filter: brightness(120%);
+    }
+  }
+}

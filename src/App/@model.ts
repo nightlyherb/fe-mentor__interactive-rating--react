@@ -1,4 +1,4 @@
-type Rating = 1 | 2 | 3 | 4 | 5;
+export type Rating = 1 | 2 | 3 | 4 | 5;
 
 export type AppModel =
   | { stage: "select rating"; rating: Rating | null }
