@@ -2,7 +2,7 @@ import React from "react";
 import { AppModel, Rating, updateRatingOrNoop } from "../@model";
 import RatingSelectRadio from "./RatingSelectRadio";
 
-export function RatingSelectCardView(props: {
+export default function RatingSelectCard(props: {
   model: AppModel;
   updateModel: (updateFn: (oldModel: AppModel) => AppModel) => void;
 }) {
