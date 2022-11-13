@@ -1,6 +1,9 @@
 @use "/src/@common/styles/colors.module.scss" as colors;
 
 .submitButton {
+  width: 100%;
+  padding: 8px;
+  border: none;
   border-radius: 100vmax;
   background-color: colors.$orange;
   color: colors.$white;

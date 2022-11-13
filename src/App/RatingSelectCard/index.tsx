@@ -1,6 +1,16 @@
 import React from "react";
-import { AppModel, Rating, updateRatingOrNoop } from "../@model";
+
+import {
+  AppModel,
+  Rating,
+  updateRatingOrNoop,
+  submitRatingOrNoop,
+} from "../@model";
+
 import RatingSelectRadio from "./RatingSelectRadio";
+import RatingSubmitButton from "./RatingSubmitButton";
+
+import styles from "./styles.module.scss";
 
 export default function RatingSelectCard(props: {
   model: AppModel;
@@ -13,13 +23,18 @@ export default function RatingSelectCard(props: {
     updateModel(updateFn);
   };
 
+  const handleSubmit = () => {
+    updateModel(submitRatingOrNoop);
+  };
+
   return (
-    <form>
+    <form className={styles.main}>
       <RatingSelectRadio
         selectedRating={model.rating}
         onSelect={handleSelect}
         name={"rating"}
       ></RatingSelectRadio>
+      <RatingSubmitButton onSubmit={handleSubmit}></RatingSubmitButton>
     </form>
   );
 }

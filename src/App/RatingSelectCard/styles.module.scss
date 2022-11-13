@@ -1,0 +1,5 @@
+@use "/src/@common/styles/colors.module.scss" as colors;
+
+.main {
+  background-color: colors.$dark-blue;
+}
