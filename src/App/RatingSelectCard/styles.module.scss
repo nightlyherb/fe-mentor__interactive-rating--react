@@ -3,3 +3,11 @@
 .main {
   background-color: colors.$dark-blue;
 }
+
+.contentWrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  padding-block: 16px;
+  padding-inline: 10%;
+}

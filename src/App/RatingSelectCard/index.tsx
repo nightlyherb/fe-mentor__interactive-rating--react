@@ -28,13 +28,18 @@ export default function RatingSelectCard(props: {
   };
 
   return (
-    <form className={styles.main}>
+    <form className={`${styles.main} ${styles.contentWrapper}`}>
       <RatingSelectRadio
         selectedRating={model.rating}
         onSelect={handleSelect}
         name={"rating"}
       ></RatingSelectRadio>
+      <Spacer />
       <RatingSubmitButton onSubmit={handleSubmit}></RatingSubmitButton>
     </form>
   );
+}
+
+function Spacer() {
+  return <div></div>;
 }
