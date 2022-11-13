@@ -1,0 +1,12 @@
+@use "/src/@common/styles/colors.module.scss" as colors;
+
+.submitButton {
+  border-radius: 100vmax;
+  background-color: colors.$orange;
+  color: colors.$white;
+
+  &:hover, &:active {
+    background-color: colors.$white;
+    color: colors.$orange;
+  }
+}
